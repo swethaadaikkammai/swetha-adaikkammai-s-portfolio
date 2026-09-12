@@ -6,7 +6,16 @@ import {
 } from "lucide-react";
 import myPhoto from "./assets/me2.png";
 import logo from "./assets/logo.png";
-
+import vitMeritScholarship from "./assets/vit-merit-scholarship.jpg";
+import harvardCs50Certificate from "./assets/harvard-cs50-certificate.jpg";
+import harvardCybersecurityCertificate from "./assets/harvard-cybersecurity-certificate.jpg";
+import starpupilaward from "./assets/star-pupil-award.jpg";
+import courseraBusinessAnalysisCertificate from "./assets/coursera-business-analysis-certificate.jpg";
+import commonwealthbank from "./assets/commonwealth-bank-certificate.jpg";
+import standardchartered from "./assets/standard-chartered-certificate.jpg";
+import wellsfargo from "./assets/wells-fargo-certificate.jpg";
+import awssolutionsarchitect from "./assets/aws-solutions-architecture.jpg";
+import aipendo from "./assets/aipendo.jpg";
 // ─── Fonts ──────────────────────────────────────────────────────────────────
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const MONO = "'DM Mono', monospace";
@@ -37,16 +46,15 @@ const PASTEL: Pal = {
 // ─── Data ───────────────────────────────────────────────────────────────────
 const about = {
   name: "Swetha Adaikkammai",
-  role: "Student | Aspiring Business Analyst & Product Designer | ML Enthusiast | Community Builder",
+  role: "Student | Aspiring Data / Business Analyst & Product Designer | ML Enthusiast | Community Builder",
   headline: "Creating things that matter, at the intersection of business, design & tech.",
-  bio: "Passionate Student, aspiring Business Analyst, Product Designer, ML Enthusiast and a Community Builder with a keen interest in solving real-world problems through innovation, user-centric design, and strategic thinking. I enjoy building meaningful projects, creating impactful experiences, and contributing to communities that drive positive change.",
+  bio: "Passionate Student, aspiring Data / Business Analyst, Product Designer, ML Enthusiast and a Community Builder with a keen interest in solving real-world problems through innovation, user-centric design, and strategic thinking. I enjoy building meaningful projects, creating impactful experiences, and contributing to communities that drive positive change.",
   location: "Bangalore, India",
   email: "swethaadaikks@gmail.com",
   linkedin: "https://www.linkedin.com/in/swetha-adaikkammai-aba99428a",
   phone: "+91 7010734009",
   instagram: "swethaa.29",
-  // TODO: replace with your real resume link (e.g. a Google Drive "view" link)
-  resume: "#",
+  resume: "https://drive.google.com/file/d/1UPTOqdEw34cjtA6oE4tif0TrLgg4aS1V/view?usp=sharing",
   stat1val: "4+", stat1label: "Projects",
   stat2val: "5+", stat2label: "Months of Working Experience",
   stat3val: "3+", stat3label: "Years of Coding",
@@ -98,17 +106,29 @@ const EXTRAS = [
   { id: 3, title: "Design Coordinator", org: "Gravitas-2025, VIT Vellore", period: "2025", description: "Social media and merch designs for college tech fest Gravitas'25." },
 ];
 
+// `image` is optional — import a real photo/scan of the award or certificate
+// and pass it here (e.g. `image: starPupilPhoto` after `import starPupilPhoto
+// from "./assets/star-pupil.jpg"`). Leave it unset/null to keep the numbered
+// placeholder tile.
 const ACHIEVEMENTS = [
-  { id: 1, num: "01", tag: "Award", title: "Star Pupil of the Batch", org: "Christ School, ICSE", description: "Awarded for outstanding academic and extracurricular performance across the graduating batch.", link: null as string | null },
-  { id: 2, num: "02", tag: "Academic", title: "School Level Second Rank Holder", org: "Christ School, ICSE", description: "Ranked second at the school level in the ICSE board examinations.", link: null as string | null },
-  { id: 3, num: "03", tag: "Certificate", title: "Business Analytics Certificate", org: "Toyota Kirloskar Motor Pvt. Ltd", description: "Awarded on completion of the Power BI and Power Apps work delivered during the internship.", link: "https://drive.google.com/file/d/1RppIGxtVAnBZ9v0QtSGPyy6R1Xp4YvNe/view?usp=sharing" },
-  { id: 4, num: "04", tag: "Certificate", title: "UI/UX & Product Design Certificate", org: "DARIS", description: "Certificate for contributions to the IIHS website redevelopment and The August Company design work.", link: "https://drive.google.com/file/d/1HDTJzccPqEhlQj0R02OvJNeFjVOMd0_F/view?usp=sharing" },
+  { id: 1, num: "01", tag: "Award", title: "Star Pupil of the Batch", org: "Christ School, ICSE", description: "Awarded for outstanding academic and extracurricular performance across the graduating batch.", link: null as string | null, image: starpupilaward as string | null },
+  { id: 2, num: "02", tag: "Certificate", title: "Merit Scholarship Holder", org: "Vellore Institute of Technology", description: "Awarded for consistently maintaining a top 6 CGPA (9.42) ranking in my batch through every semester to date.", link: "https://drive.google.com/file/d/1GBknM4d2qpZbCHBVaQjMAxzzUrmcNCPb/view?usp=sharing", image: vitMeritScholarship as string | null },
+  { id: 3, num: "03", tag: "Certificate", title: "Introduction to Computer Science", org: "Harvard", description: "Completed Harvard's CS50 course, building a foundation in algorithms, data structures, and problem-solving across C, Python, SQL, and web development.", link: "https://drive.google.com/file/d/1GfMIjuwxPXD_bPt_nUF9An8uVX8d5cXP/view?usp=sharing", image: harvardCs50Certificate as string | null },
+  { id: 4, num: "04", tag: "Certificate", title: "CyberSecurity", org: "Harvard", description: "Completed Harvard's CyberSecurity course, gaining foundational knowledge in cybersecurity principles and practices.", link: "https://drive.google.com/file/d/14hN8GaGFF0OEf0CSZ4zL7JYzbHMuZB5M/view?usp=sharing", image: harvardCybersecurityCertificate as string | null },
+  { id: 5, num: "05", tag: "Certificate", title: "Business Analysis & Process Management", org: "Coursera", description: "Completed a comprehensive course on business analysis and process management.", link: "https://drive.google.com/file/d/1kURTYlWs9es02VHJ9FZ6R35O4TJ4P8p7/view?usp=sharing", image: courseraBusinessAnalysisCertificate as string | null },
+  { id: 6, num: "06", tag: "Certificate", title: "Introduction to Data Science", org: "Commonwealth Bank", description: "Completed a intensive data analysis job simulation in a Commonwealth Bank environment.", link: "https://drive.google.com/file/d/1c5JVZr9r1fFxmzdTysHywDkqsmJ9nHEE/view?usp=sharing", image: commonwealthbank as string | null },
+  { id: 7, num: "07", tag: "Certificate", title: "Credit Analysis", org: "Standard Chartered", description: "Completed a comprehensive job simulation on credit data analytics and its applications in fintech.", link: "https://drive.google.com/file/d/1VLIvh4AUCnMBsAHmNiRY0WQHKZPXniE4/view?usp=sharing", image: standardchartered as string | null },
+  { id: 8, num: "08", tag: "Certificate", title: "Software Engineering", org: "Wells Fargo", description: "Completed a comprehensive course on software engineering principles and practices.", link: "https://drive.google.com/file/d/1_y93YZGDNKXAtKtChk81T7pQA2AHkwTV/view?usp=sharing", image: wellsfargo as string | null },
+  { id: 9, num: "09", tag: "Certificate", title: "AWS Solutions Architect", org: "Amazon Web Services", description: "Completed a comprehensive course on AWS solutions architecture principles and practices.", link: "https://drive.google.com/file/d/1IiVlxJqvqYkOVvdhedr0EMszkc9tvZg3/view?usp=sharing", image: awssolutionsarchitect as string | null },
+  { id: 10, num: "10", tag: "Certificate", title: "AI for Product Management", org: "Google Cloud", description: "Completed a comprehensive course on AI and its use in product management.", link: "https://drive.google.com/file/d/1seZS4ieupYSGwVlyloea_67Jj3NJTVc3/view?usp=sharing", image: aipendo as string | null },
 ];
+
+
 
 const PLAYGROUND = [
   { id: 1, title: "Momentum — Daily Progress Tracker", category: "Productivity", description: "A gamified daily logging app for building habits — write journal entries, attach progress photos, run dedicated focus timers, and keep your streak alive. Turns consistency into a game.", link: "https://github.com" },
   { id: 2, title: "Quote of the Day Generator", category: "Creative Coding", description: "Fetches and displays a fresh quote daily with a generative gradient background, unique to the date. No two days look the same.", link: "https://github.com" },
-  { id: 3, title: "Color Palette Extractor", category: "Creative Coding", description: "Upload an image, extract its dominant color palette using k-means clustering in-browser, and export as CSS variables or a Tailwind config.", link: "https://github.com" },
+  { id: 3, title: "Color Palette Extractor", category: "Creative Coding", description: "Upload an image, extract its dominant color palette using k-means clustering in-browser, and export as CSS variables or a Tailwind config.", link: "https://swethaadaikkammai.github.io/palatte-web/" },
   { id: 4, title: "Pixel Art Generator", category: "Creative Coding", description: "Converts images into pixel art grids in the browser. A fun experiment in Canvas APIs.", link: "https://github.com" },
 ];
 
@@ -561,7 +581,7 @@ function Binder({ p }: { p: Pal }) {
           <SectionHeader
             p={p}
             label="Education"
-            title={<><GraduationCap className="inline mr-2 mb-1 opacity-30" size={32} />Building Foundations</>}
+            title={<><GraduationCap className="inline mr-2 mb-1 opacity-30" size={32} />Education</>}
             sub="Academic excellence in software engineering, with focus on data analytics, business systems, and strategic thinking."
           />
         </Reveal>
@@ -647,7 +667,7 @@ function WorkExperience({ p }: { p: Pal }) {
           <SectionHeader
             p={p}
             label="Experience"
-            title={<><Briefcase className="inline mr-2 mb-1 opacity-30" size={32} />Professional Impact</>}
+            title={<><Briefcase className="inline mr-2 mb-1 opacity-30" size={32} />Work Experience</>}
             sub="Real-world experience translating business needs into data-driven solutions and strategic recommendations."
           />
         </Reveal>
@@ -703,8 +723,8 @@ function SkillFolders({ p }: { p: Pal }) {
           <SectionHeader
             p={p}
             label="Skills"
-            title={<><Layers className="inline mr-2 mb-1 opacity-30" size={32} />My Toolkit</>}
-            sub="Business analysis, data analytics, and visualization tools. Power BI, Python, SQL, and strategic frameworks. Click to explore."
+            title={<><Layers className="inline mr-2 mb-1 opacity-30" size={32} />Skill Set</>}
+            sub="Business analysis, data analytics, and visualization tools. Power BI, Python, SQL, and strategic frameworks."
           />
         </Reveal>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -860,7 +880,7 @@ function ProjectCarousel({ p }: { p: Pal }) {
           <SectionHeader
             p={p}
             label="Projects"
-            title={<><Code2 className="inline mr-2 mb-1 opacity-30" size={32} />Analytics & Insights</>}
+            title={<><Code2 className="inline mr-2 mb-1 opacity-30" size={32} />Projects</>}
             sub="Data-driven projects spanning business analytics, predictive modeling, and strategic optimization. Drag, swipe, or use the arrow keys."
           />
         </Reveal>
@@ -946,7 +966,7 @@ function ProjectCarousel({ p }: { p: Pal }) {
             <h3 className="font-bold leading-tight text-2xl lg:text-3xl">{proj.title}</h3>
             <p style={{ color: p.muted, fontFamily: MONO }} className="text-xs">{proj.tech}</p>
             <p style={{ color: p.muted }} className="text-sm leading-relaxed">{proj.description}</p>
-            <AnimatedCTA href={proj.link} bg={p.accent} fg={p.accentFg} className="text-xs tracking-widest uppercase mt-1 w-fit" style={{ fontFamily: MONO, padding: "6px 12px" } as React.CSSProperties}>
+            <AnimatedCTA href={proj.link} bg={cardColor} fg={p.cardFg} className="text-xs tracking-widest uppercase mt-1 w-fit" style={{ fontFamily: MONO, padding: "6px 12px" } as React.CSSProperties}>
               <Github size={12} /> View Code
             </AnimatedCTA>
             <div className="flex items-center gap-4 pt-3" style={{ borderTop: `1px solid ${p.border}` }}>
@@ -970,27 +990,56 @@ function ProjectCarousel({ p }: { p: Pal }) {
 }
 
 // ─── Achievements & Certificates: checkerboard editorial grid ─────────────
+// Shows every achievement at once (media + text cell each), generalized to
+// any count — no longer hardcoded to exactly 4, so nothing gets dropped.
 function AchievementsGrid({ p }: { p: Pal }) {
   const [hoverMedia, setHoverMedia] = useState<number | null>(null);
   const [hoverText, setHoverText] = useState<number | null>(null);
 
   const MediaCell = (item: typeof ACHIEVEMENTS[number], colorIdx: number, delay: number) => {
     const isHover = hoverMedia === item.id;
+    const fColor = p.folder[colorIdx % p.folder.length];
     return (
       <Reveal key={`m-${item.id}`} delay={delay} y={16}>
         <div
           onMouseEnter={() => setHoverMedia(item.id)}
           onMouseLeave={() => setHoverMedia(null)}
-          className="relative flex items-center justify-center min-h-[210px] h-full"
-          style={{ background: `${p.folder[colorIdx % p.folder.length]}${isHover ? "88" : "66"}`, border: `1px solid ${p.border}`, transition: `background ${MOTION.normal} ${MOTION.ease}` }}
+          className="relative flex items-center justify-center min-h-[260px] h-full overflow-hidden p-3"
+          style={{ background: item.image ? p.card : `${fColor}${isHover ? "88" : "66"}`, border: `1px solid ${p.border}`, transition: `background ${MOTION.normal} ${MOTION.ease}` }}
         >
-          <span
-            style={{ fontFamily: MONO, color: p.cardFg, transform: isHover ? "translateY(-3px)" : "translateY(0)", transition: `transform ${MOTION.normal} ${MOTION.ease}` }}
-            className="text-6xl font-black opacity-20 select-none"
-          >
-            {item.num}
-          </span>
-          <Award size={26} className="absolute" style={{ color: p.cardFg, opacity: isHover ? 0.65 : 0.4, transition: `opacity ${MOTION.normal} ${MOTION.ease}` }} />
+          {item.image ? (
+            // Real photo/scan of the award or certificate. object-contain
+            // (not object-cover) so both portrait and landscape certificates
+            // show in full — letterboxed rather than cropped — regardless
+            // of their original orientation/aspect ratio.
+            <img
+              src={item.image}
+              alt={item.title}
+              className="max-w-full max-h-full w-auto h-auto object-contain rounded-md"
+              style={{ transform: isHover ? "scale(1.04)" : "scale(1)", transition: `transform ${MOTION.slow} ${MOTION.ease}`, boxShadow: "0 6px 18px rgba(51,44,34,0.12)" }}
+            />
+          ) : (
+            // Placeholder — swap in a real image via the `image` field on
+            // this achievement's data entry.
+            <div
+              className="absolute inset-3 rounded-xl flex flex-col items-center justify-center gap-2"
+              style={{ border: `2px dashed ${p.cardFg}33` }}
+            >
+              <span
+                style={{ fontFamily: MONO, color: p.cardFg, transform: isHover ? "translateY(-3px)" : "translateY(0)", transition: `transform ${MOTION.normal} ${MOTION.ease}` }}
+                className="text-6xl font-black opacity-20 select-none"
+              >
+                {item.num}
+              </span>
+              <Award size={26} className="absolute" style={{ color: p.cardFg, opacity: isHover ? 0.65 : 0.4, transition: `opacity ${MOTION.normal} ${MOTION.ease}` }} />
+              <span
+                style={{ fontFamily: MONO, color: p.cardFg }}
+                className="absolute bottom-3 text-[9px] tracking-widest uppercase opacity-40"
+              >
+                Add image
+              </span>
+            </div>
+          )}
         </div>
       </Reveal>
     );
@@ -1003,7 +1052,7 @@ function AchievementsGrid({ p }: { p: Pal }) {
         <div
           onMouseEnter={() => setHoverText(item.id)}
           onMouseLeave={() => setHoverText(null)}
-          className="min-h-[210px] h-full p-6 flex flex-col justify-center"
+          className="min-h-[260px] h-full p-6 flex flex-col justify-center"
           style={{ background: p.card, border: `1px solid ${p.border}` }}
         >
           <span style={{ fontFamily: MONO, color: p.muted }} className="text-2xl font-black mb-2">{item.num}</span>
@@ -1020,12 +1069,15 @@ function AchievementsGrid({ p }: { p: Pal }) {
     );
   };
 
-  const [a1, a2, a3, a4] = ACHIEVEMENTS;
-  // Row 1 starts media-first, row 2 starts text-first — the alternating
-  // checkerboard rhythm from the magazine-grid reference. Media reveals just
-  // ahead of its paired text, matching the "media first" motion spec.
-  const row1 = [MediaCell(a1, 0, 0), TextCell(a1, 90), MediaCell(a2, 1, 140), TextCell(a2, 230)];
-  const row2 = [TextCell(a3, 280), MediaCell(a3, 2, 190), TextCell(a4, 370), MediaCell(a4, 3, 330)];
+  // Build the checkerboard for however many achievements there are: even
+  // items go media-first, odd items go text-first — same alternating rhythm
+  // as before, just driven by a loop instead of 4 hardcoded variables so a
+  // 5th (or 6th, 7th...) entry is never silently dropped.
+  const cells = ACHIEVEMENTS.flatMap((item, i) => {
+    const media = MediaCell(item, i, i * 110);
+    const text = TextCell(item, i * 110 + 90);
+    return i % 2 === 0 ? [media, text] : [text, media];
+  });
 
   return (
     <section id="achievements">
@@ -1039,8 +1091,7 @@ function AchievementsGrid({ p }: { p: Pal }) {
           />
         </Reveal>
         <div className="rounded-2xl overflow-hidden grid grid-cols-2 lg:grid-cols-4" style={{ border: `1px solid ${p.border}` }}>
-          {row1}
-          {row2}
+          {cells}
         </div>
       </Card>
     </section>
@@ -1448,7 +1499,7 @@ export default function App() {
         <section id="playground">
           <Card p={p} className="p-8 lg:p-12">
             <Reveal>
-              <SectionHeader p={p} label="Playground" title={<><Gamepad2 className="inline mr-2 mb-1 opacity-30" size={32} />Just For Fun</>} sub="Side projects, experiments, and things I built because I was curious." />
+              <SectionHeader p={p} label="Playground" title={<><Gamepad2 className="inline mr-2 mb-1 opacity-30" size={32} />Playground</>} sub="Side projects, experiments, and things I built because I was curious." />
             </Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
               {PLAYGROUND.map((pg, idx) => {
