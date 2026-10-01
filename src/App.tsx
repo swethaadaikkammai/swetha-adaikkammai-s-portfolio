@@ -68,8 +68,9 @@ const EDUCATION = [
 ];
 
 const WORK_EXPERIENCE = [
-  { id: 1, title: "Toyota Kirloskar Motor Pvt. Ltd", tech: "Power BI · Power Apps · Python · Jupyter · HTML · CSS · JavaScript", description: "Collaborated with stakeholders to analyze business requirements, derive data-driven insights, and develop Power Apps solutions that streamlined workflows and improved productivity.", link: "https://drive.google.com/file/d/1RppIGxtVAnBZ9v0QtSGPyy6R1Xp4YvNe/view?usp=sharing", year: "2026", tag: "Business Analytics" },
-  { id: 2, title: "DARIS", tech: "Figma · PRD", description: "Contributed to IIHS website redevelopment with UI/UX and responsive design improvements, and worked with luxury furniture brand The August Company on social media creatives and website design.", link: "https://drive.google.com/file/d/1HDTJzccPqEhlQj0R02OvJNeFjVOMd0_F/view?usp=sharing", year: "2026", tag: "UI/UX · Product Design" },
+  { id: 1, title: "Toyota Kirloskar Motor Pvt. Ltd", tech: "Power BI · Power Apps · Python · Jupyter · HTML · CSS · JavaScript", description: "Collaborated with stakeholders to analyze business requirements, derive data-driven insights, and develop Power Apps solutions that streamlined workflows and improved productivity.", link: "https://drive.google.com/file/d/1RppIGxtVAnBZ9v0QtSGPyy6R1Xp4YvNe/view?usp=sharing", year: "2026", tag: "Intern" },
+  { id: 2, title: "DARIS", tech: "Figma · PRD", description: "Contributed to IIHS website redevelopment with UI/UX and responsive design improvements, and worked with luxury furniture brand The August Company on social media creatives and website design.", link: "https://drive.google.com/file/d/1HDTJzccPqEhlQj0R02OvJNeFjVOMd0_F/view?usp=sharing", year: "2026", tag: "Interface Specialist Intern" },
+  { id: 3, title: "Samsung Research and Development Centre" , tech: "Python · Image Processing · ML · AI", description: "Currently working on a Image Classification of Mobile UI Screenshots using ML", link: "https://drive.google.com/file/d/1HDTJzccPqEhlQj0R02OvJNeFjVOMd0_F/view?usp=sharing", year: "2026", tag: "Research and Development Intern" },
 ];
 
 const SKILLS = [
@@ -120,7 +121,7 @@ const ACHIEVEMENTS = [
   { id: 7, num: "07", tag: "Certificate", title: "Credit Analysis", org: "Standard Chartered", description: "Completed a comprehensive job simulation on credit data analytics and its applications in fintech.", link: "https://drive.google.com/file/d/1VLIvh4AUCnMBsAHmNiRY0WQHKZPXniE4/view?usp=sharing", image: standardchartered as string | null },
   { id: 8, num: "08", tag: "Certificate", title: "Software Engineering", org: "Wells Fargo", description: "Completed a comprehensive course on software engineering principles and practices.", link: "https://drive.google.com/file/d/1_y93YZGDNKXAtKtChk81T7pQA2AHkwTV/view?usp=sharing", image: wellsfargo as string | null },
   { id: 9, num: "09", tag: "Certificate", title: "AWS Solutions Architect", org: "Amazon Web Services", description: "Completed a comprehensive course on AWS solutions architecture principles and practices.", link: "https://drive.google.com/file/d/1IiVlxJqvqYkOVvdhedr0EMszkc9tvZg3/view?usp=sharing", image: awssolutionsarchitect as string | null },
-  { id: 10, num: "10", tag: "Certificate", title: "AI for Product Management", org: "Google Cloud", description: "Completed a comprehensive course on AI and its use in product management.", link: "https://drive.google.com/file/d/1seZS4ieupYSGwVlyloea_67Jj3NJTVc3/view?usp=sharing", image: aipendo as string | null },
+  { id: 10, num: "10", tag: "Certificate", title: "AI for Product Management", org: "Google Cloud", description: "Completed a comprehensive course on AI and its use in product management.", link: "https://drive.google.com/file/d/1rI7sdZjCRcLwCnkXYw33Hk9NqSKehaw4/view?usp=sharing", image: aipendo as string | null },
 ];
 
 
