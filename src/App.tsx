@@ -54,7 +54,7 @@ const about = {
   linkedin: "https://www.linkedin.com/in/swetha-adaikkammai-aba99428a",
   phone: "+91 7010734009",
   instagram: "swethaa.29",
-  resume: "https://drive.google.com/file/d/1UPTOqdEw34cjtA6oE4tif0TrLgg4aS1V/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1PUKcQcSHX2HSWM7I0cAb29nUOAiu4z3e/view?usp=sharing",
   stat1val: "4+", stat1label: "Projects",
   stat2val: "5+", stat2label: "Months of Working Experience",
   stat3val: "3+", stat3label: "Years of Coding",
